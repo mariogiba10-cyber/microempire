@@ -1,0 +1,46 @@
+{
+"storeInfo": {
+"title": "MICROEMPIRE Store",
+"author": "mariogiba10-cyber",
+"description": "Tienda de MICROEMPIRE para Nintendo DS y 3DS",
+"file": "microempire.unistore",
+"url": "https://raw.githubusercontent.com/mariogiba10-cyber/microempire/main/microempire.unistore",
+"version": 3,
+"revision": 1
+},
+"storeContent": [
+{
+"info": {
+"title": "MICROEMPIRE",
+"author": "mariogiba10-cyber",
+"description": "Juego homebrew de MICROEMPIRE",
+"category": ["game"],
+"console": ["DS", "3DS"],
+"version": "0.5.0",
+"last_updated": "2026-10-09"
+},
+"Descargar MICROEMPIRE.nds": [
+{
+"type": "downloadFile",
+"file": "https://raw.githubusercontent.com/mariogiba10-cyber/microempire/main/MICROEMPIRE.nds",
+"output": "sdmc:/roms/nds/MICROEMPIRE.nds"
+}
+],
+"Descargar MICROEMPIRE.cia": [
+{
+"type": "downloadFile",
+"file": "https://raw.githubusercontent.com/mariogiba10-cyber/microempire/main/MICROEMPIRE.cia",
+"output": "sdmc:/MICROEMPIRE.cia"
+},
+{
+"type": "installCia",
+"file": "/MICROEMPIRE.cia"
+},
+{
+"type": "deleteFile",
+"file": "sdmc:/MICROEMPIRE.cia"
+}
+]
+}
+]
+}
